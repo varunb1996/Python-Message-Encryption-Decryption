@@ -35,7 +35,7 @@ def Result():
     elif(i==2):
         Output.set(decode(k, msg))
     else:
-        messagebox.showinfo('ProjectGurukul', 'Please Choose one of Encryption or Decrption. Try again.')
+        messagebox.showinfo('vb', 'Please Choose one of Encryption or Decrption. Try again.')
 
 #Function that executes on clicking Reset function
 def Reset():
@@ -59,7 +59,7 @@ Output = StringVar()
 headingFrame1 = Frame(wn,bg="gray91",bd=5)
 headingFrame1.place(relx=0.2,rely=0.1,relwidth=0.7,relheight=0.16)
 
-headingLabel = Label(headingFrame1, text=" Welcome to Encryption and \nDecryption with ProjectGurukul", fg='grey19', font=('Courier',13,'bold'))
+headingLabel = Label(headingFrame1, text=" Welcome to Encryption and \nDecryption", fg='grey19', font=('Courier',13,'bold'))
 headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
 
 
@@ -100,6 +100,7 @@ ResetBtn.place(x=15,y=400)
 QuitBtn = Button(wn, text='Exit', bg='old lace', fg='black',width=15,height=1, command=wn.destroy)
 QuitBtn['font'] = font.Font( size=12)
 QuitBtn.place(x=345,y=400)
+
 
 
 wn.mainloop()
